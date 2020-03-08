@@ -3,14 +3,11 @@
     width:375px;
     background-color: #9D8670;
     text-align: center;
-    & .footer_menu{
+    & .l-footer_menu{
         display:flex;
         justify-content: center;
       li{
         margin:43px 0 39px 0;
       }
     }
-    // & .copyright{
-    //     //margin-bottom:31px;
-    // }
 }

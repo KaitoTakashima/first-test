@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.l-footer .footer_menu {
+.l-footer .l-footer_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
           justify-content: center;
 }
 
-.l-footer .footer_menu li {
+.l-footer .l-footer_menu li {
   margin: 43px 0 39px 0;
 }
 
