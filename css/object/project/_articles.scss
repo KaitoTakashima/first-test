@@ -1,0 +1,54 @@
+.p-munu{
+    li{
+       margin:20px auto; 
+       padding:10px;
+       li{
+           background-color:rgba(250, 250, 250,.7);
+       }
+    }
+    & .p-takeout {
+        width:335px;
+        height:642px;
+        background-image: url("../image/Raisetech-test_contentImg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+    & .p-eatin{
+        width:335px;
+        height:642px;
+        background-image: url("../image/Raisetech-test_contentImg1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+    & .p-head{
+        margin-top:297px;
+    }
+}
+
+.p-access{
+    position:relative;
+    height:691px;
+    width:375px;
+    background-image: url("../image/front_page-GoogleMap.jpg");
+    color:rgb(94, 90, 90);
+    text-align:center;
+    
+    & .p-accessHeading{
+      padding:46px 93px 46px 42px;
+    }
+    & .p-accessText{
+        padding:20px;
+        line-height:33px;
+    }
+}
+.p-access::before{
+    content:'';
+    background:rgba(0,0,0,.2);
+    position: absolute;
+    top:0px;
+    left:0;
+    height:415px;
+    width:375px;
+}

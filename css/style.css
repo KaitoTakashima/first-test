@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.wrapper {
+  height: 2600px;
+  width: 375px;
+}
+
+.l-footer {
+  height: 150px;
+  width: 375px;
+  background-color: #9D8670;
+  text-align: center;
+}
+
+.l-footer .footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-footer .footer_menu li {
+  margin: 43px 0 39px 0;
+}
+
+.l-header {
+  text-align: center;
+  height: 217px;
+  width: 375px;
+  background-color: #FFF7EF;
+}
+
+.l-header .l-header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.l-header .l-munu-btn {
+  margin: 14px 16px 0 0;
+}
+
+.l-header h1 {
+  margin: 29px 0 39px 16px;
+}
+
+.mainVisual {
+  background-image: url("../image/Raisetech-test_mainImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 285px;
+  width: 375px;
+}
+
+.c-menu-btn {
+  border: none;
+  font-size: 20px;
+  background-color: #FFF7EF;
+}
+
+.p-munu li {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.p-munu li li {
+  background-color: rgba(250, 250, 250, 0.7);
+}
+
+.p-munu .p-takeout {
+  width: 335px;
+  height: 642px;
+  background-image: url("../image/Raisetech-test_contentImg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-munu .p-eatin {
+  width: 335px;
+  height: 642px;
+  background-image: url("../image/Raisetech-test_contentImg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-munu .p-head {
+  margin-top: 297px;
+}
+
+.p-access {
+  position: relative;
+  height: 691px;
+  width: 375px;
+  background-image: url("../image/front_page-GoogleMap.jpg");
+  color: #5e5a5a;
+  text-align: center;
+}
+
+.p-access .p-accessHeading {
+  padding: 46px 93px 46px 42px;
+}
+
+.p-access .p-accessText {
+  padding: 20px;
+  line-height: 33px;
+}
+
+.p-access::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 415px;
+  width: 375px;
+}
+/*# sourceMappingURL=style.css.map */

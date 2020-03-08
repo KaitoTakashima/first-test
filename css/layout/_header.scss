@@ -1,0 +1,16 @@
+.l-header{
+   text-align: center;
+   height:217px;
+   width:375px;
+   background-color: #FFF7EF;
+   & .l-header-btn{
+      display:flex;
+      justify-content: flex-end;
+   }
+   & .l-munu-btn{
+      margin:14px 16px 0 0;
+   }
+   h1{
+       margin:29px 0 39px 16px;
+   }
+}
