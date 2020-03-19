@@ -1,8 +1,31 @@
-.mainVisual{
-   background-image:url("../image/Raisetech-test_mainImg.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position:center;
-   height:285px;
-   width:375px;
+.main_visual{
+      background-image:url("../image/Raisetech-test_mainImg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:center;
+      height:285px;
+      width:375px;
 }
+
+     .archive_main_visual{
+            background-image:url("../image/Raisetech-test_archive.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+            height:285px;
+            width:375px;
+            position:relative;
+            color:#fff;
+      & .archive_main_visual_font{
+            position:absolute;
+            top:104px;
+            left:37px;
+      }
+}
+
+.archive_subheading{
+    padding:22px;
+    & .subheading{
+          margin:10px 0;
+    }
+  }

@@ -38,7 +38,7 @@
   background-color: #FFF7EF;
 }
 
-.l-header .l-header-btn {
+.l-header .l-header_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@
           justify-content: flex-end;
 }
 
-.l-header .l-munu-btn {
+.l-header .l-munu_btn {
   margin: 14px 16px 0 0;
 }
 
@@ -55,7 +55,7 @@
   margin: 29px 0 39px 16px;
 }
 
-.mainVisual {
+.main_visual {
   background-image: url("../image/Raisetech-test_mainImg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,10 +64,91 @@
   width: 375px;
 }
 
-.c-menu-btn {
+.archive_main_visual {
+  background-image: url("../image/Raisetech-test_archive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 285px;
+  width: 375px;
+  position: relative;
+  color: #fff;
+}
+
+.archive_main_visual .archive_main_visual_font {
+  position: absolute;
+  top: 104px;
+  left: 37px;
+}
+
+.archive_subheading {
+  padding: 22px;
+}
+
+.archive_subheading .subheading {
+  margin: 10px 0;
+}
+
+.c-menu_btn {
   border: none;
   font-size: 20px;
   background-color: #FFF7EF;
+}
+
+.c-menu_group .c-munu {
+  margin: 0 auto;
+  width: 336px;
+  margin-bottom: 21px;
+}
+
+.c-menu_group .c-munu_image {
+  background-image: url("../image/Raisetech-test_archive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  width: 336px;
+}
+
+.c-menu_content {
+  background-color: #3C2B1C;
+  height: 350px;
+  padding: 34px 0 40px 17px;
+  color: #ffffff;
+}
+
+.c-menu_content .c-menu_title {
+  margin-bottom: 31px;
+}
+
+.c-menu_content .c-menu_info {
+  font-size: 16px;
+  line-height: 26px;
+  width: 246px;
+  margin-bottom: 40px;
+}
+
+.wrap_detail {
+  text-align: center;
+}
+
+.wrap_detail .c-menu_detail {
+  text-decoration: none;
+  font-size: 16px;
+  color: #707070;
+  background-color: #ffffff;
+  padding: 13px 40px;
+  border-radius: 20px;
+}
+
+.c-page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 31px 0;
 }
 
 .p-munu li {
@@ -110,11 +191,11 @@
   text-align: center;
 }
 
-.p-access .p-accessHeading {
+.p-access .p-access_heading {
   padding: 46px 93px 46px 42px;
 }
 
-.p-access .p-accessText {
+.p-access .p-access_text {
   padding: 20px;
   line-height: 33px;
 }

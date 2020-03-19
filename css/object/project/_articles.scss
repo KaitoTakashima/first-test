@@ -1,6 +1,6 @@
 .p-munu{
     li{
-       margin:20px auto; 
+       margin:20px auto;
        padding:10px;
        li{
            background-color:rgba(250, 250, 250,.7);
@@ -34,11 +34,11 @@
     background-image: url("../image/front_page-GoogleMap.jpg");
     color:rgb(94, 90, 90);
     text-align:center;
-    
-    & .p-accessHeading{
-      padding:46px 93px 46px 42px;
+
+    & .p-access_heading{
+        padding:46px 93px 46px 42px;
     }
-    & .p-accessText{
+    & .p-access_text{
         padding:20px;
         line-height:33px;
     }
@@ -52,3 +52,4 @@
     height:415px;
     width:375px;
 }
+
