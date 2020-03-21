@@ -3,8 +3,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position:center;
-      height:285px;
-      width:375px;
+      // height:285px;
+      // width:375px;
 }
 
      .archive_main_visual{
@@ -13,19 +13,20 @@
             background-size: cover;
             background-position:center;
             height:285px;
-            width:375px;
+            width:auto;
             position:relative;
             color:#fff;
       & .archive_main_visual_font{
             position:absolute;
             top:104px;
             left:37px;
+            font-size:3vw;
       }
 }
 
 .archive_subheading{
     padding:22px;
     & .subheading{
-          margin:10px 0;
+          margin:20px 0 ;
     }
   }

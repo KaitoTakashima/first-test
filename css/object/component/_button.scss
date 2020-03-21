@@ -8,8 +8,8 @@
 .c-menu_group{
     & .c-munu{
         margin:0 auto;
-        width:336px;
-        margin-bottom:21px;
+        padding:20px;
+        margin-bottom:10px;
     }
     & .c-munu_image{
         background-image:url("../image/Raisetech-test_archive.jpg");
@@ -17,7 +17,7 @@
         background-size: cover;
         background-position:center;
         height:230px;
-        width:336px;
+        width:auto;
     }
 }
  .c-menu_content{

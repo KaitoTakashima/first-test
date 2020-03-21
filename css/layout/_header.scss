@@ -1,7 +1,5 @@
 .l-header{
    text-align: center;
-   height:217px;
-   width:375px;
    background-color: #FFF7EF;
    & .l-header_btn{
       display:flex;
@@ -9,6 +7,9 @@
    }
    & .l-munu_btn{
       margin:14px 16px 0 0;
+   }
+   & .l-search_form{
+      padding-bottom:12px;
    }
    h1{
        margin:29px 0 39px 16px;
