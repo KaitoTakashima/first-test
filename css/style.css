@@ -44,7 +44,7 @@
 }
 
 .l-header .l-search_form {
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 
 .l-header h1 {
@@ -56,6 +56,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 285px;
 }
 
 .archive_main_visual {
@@ -300,9 +301,13 @@
   margin-bottom: 70px;
 }
 
+.p-munu {
+  padding: 20px;
+}
+
 .p-munu li {
-  margin: 20px auto;
-  padding: 10px;
+  margin: 5px auto;
+  padding: 20px;
 }
 
 .p-munu li li {
@@ -310,7 +315,6 @@
 }
 
 .p-munu .p-takeout {
-  width: 335px;
   height: 642px;
   background-image: url("../image/Raisetech-test_contentImg2.jpg");
   background-repeat: no-repeat;
@@ -319,7 +323,6 @@
 }
 
 .p-munu .p-eatin {
-  width: 335px;
   height: 642px;
   background-image: url("../image/Raisetech-test_contentImg1.jpg");
   background-repeat: no-repeat;
@@ -334,7 +337,6 @@
 .p-access {
   position: relative;
   height: 691px;
-  width: 375px;
   background-image: url("../image/front_page-GoogleMap.jpg");
   color: #5e5a5a;
   text-align: center;
@@ -357,5 +359,178 @@
   left: 0;
   height: 415px;
   width: 375px;
+}
+
+.p-hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: #FFF7EF;
+  position: relative;
+  z-index: 120;
+}
+
+@media (min-width: 769px) {
+  .p-hamburger {
+    display: none;
+  }
+}
+
+.p-hamburger::before, .p-hamburger::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #FFF7EF;
+  position: absolute;
+  left: calc( 50% - ( 20px / 2 ));
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.p-hamburger::before {
+  top: 15px;
+}
+
+.p-hamburger::after {
+  top: 33px;
+}
+
+.p-hamburger.is-open {
+  background-color: #f2ede9;
+}
+
+.p-hamburger.is-open::before, .p-hamburger.is-open::after {
+  background: #707070;
+}
+
+.p-hamburger.is-open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 28px;
+}
+
+.p-hamburger.is-open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 28px;
+}
+
+.p-hamburger.is-open > span {
+  background: none;
+  font-size: 0;
+}
+
+body.is-open {
+  position: fixed;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.p-gmenu {
+  height: 60px;
+  color: #707070;
+}
+
+.p-gmenu > .list {
+  -webkit-transition: all 300ms 0s ease;
+  transition: all 300ms 0s ease;
+  left: 100%;
+  width: 100vw;
+  height: 250vh;
+  padding: 200px 50px;
+  position: absolute;
+  top: 0;
+  background: rgba(242, 237, 233, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+@media (min-width: 769px) {
+  .p-gmenu > .list {
+    width: inherit;
+    height: inherit;
+    padding: inherit;
+    position: static;
+    background: inherit;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: inherit;
+    transition: inherit;
+  }
+}
+
+.p-gmenu > .list > li {
+  margin-bottom: 40px;
+  margin-right: 400px;
+}
+
+.p-gmenu > .list > li:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .p-gmenu > .list > li {
+    margin-bottom: 0;
+  }
+}
+
+.p-gmenu > .list > ul > li {
+  margin-right: 220px;
+  margin-bottom: 30px;
+  font-size: 1.0rem;
+}
+
+@media (min-width: 769px) {
+  .p-gmenu > .list {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.p-gmenu > .list li {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 769px) {
+  .p-gmenu > .list li {
+    margin-right: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-gmenu > .list li a {
+    font-weight: normal;
+    white-space: nowrap;
+  }
+}
+
+.p-gmenu.is-open > .list {
+  left: 20%;
+}
+
+.p-gmenu.is-open .c-arrow--top-l::before {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
