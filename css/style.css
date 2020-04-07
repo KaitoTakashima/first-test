@@ -8,8 +8,15 @@
 
 .l-footer {
   height: 150px;
+  width: 100%;
   background-color: #9D8670;
   text-align: center;
+}
+
+@media (min-width: 961px) {
+  .l-footer {
+    width: 145%;
+  }
 }
 
 .l-footer .l-footer_menu {
@@ -49,6 +56,34 @@
 
 .l-header h1 {
   margin: 29px 0 39px 16px;
+  color: #707070;
+}
+
+@media (min-width: 961px) {
+  .flex_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex_header h1 {
+    margin: 0 0 30px 30px;
+  }
+  .flex_header form {
+    margin-right: 20px;
+  }
+  .flex_header form .p-search_form_keyword {
+    width: 330px;
+  }
+  .flex_header form .p-search_form_submit {
+    display: inline-block;
+    width: 50px;
+  }
 }
 
 .main_visual {
@@ -57,6 +92,7 @@
   background-size: cover;
   background-position: center;
   height: 285px;
+  width: auto;
 }
 
 .archive_main_visual {
@@ -90,7 +126,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 225px;
+  height: auto;
   width: auto;
   color: #fff;
   text-align: center;
@@ -106,7 +142,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 225px;
+  height: auto;
   width: auto;
   color: #fff;
   text-align: center;
@@ -129,31 +165,42 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 769px) {
+  .c-menu_group .c-munu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .c-menu_group .c-munu_image {
-  background-image: url("../image/Raisetech-test_archive.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 230px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .c-menu_content {
   background-color: #3C2B1C;
-  height: 350px;
-  padding: 34px 0 40px 17px;
+  height: 450px;
+  padding: 34px 0 40px 30px;
   color: #ffffff;
 }
 
+@media (min-width: 769px) {
+  .c-menu_content {
+    width: 500px;
+    height: auto;
+  }
+}
+
 .c-menu_content .c-menu_title {
-  margin-bottom: 31px;
+  margin-bottom: 40px;
 }
 
 .c-menu_content .c-menu_info {
   font-size: 16px;
   line-height: 26px;
   width: 246px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .wrap_detail {
@@ -239,6 +286,24 @@
   margin-left: 10px;
 }
 
+@media (min-width: 769px) {
+  .c-singlemenu_info .c-image_group .c-image_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .c-singlemenu_info .c-image_group .c-image_flex img {
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+
+.c-singlemenu_info .c-image_group img {
+  height: auto;
+}
+
 .c-list_group {
   padding: 20px;
 }
@@ -301,6 +366,12 @@
   margin-bottom: 70px;
 }
 
+.p-search_form_keyword {
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+}
+
 .p-munu {
   padding: 20px;
 }
@@ -314,8 +385,21 @@
   background-color: rgba(250, 250, 250, 0.7);
 }
 
+@media (min-width: 769px) {
+  .p-munu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px;
+  }
+  .p-munu .p-takeout {
+    margin-right: 30px;
+  }
+}
+
 .p-munu .p-takeout {
   height: 642px;
+  margin-bottom: 20px;
   background-image: url("../image/Raisetech-test_contentImg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -324,14 +408,37 @@
 
 .p-munu .p-eatin {
   height: 642px;
+  margin-bottom: 50px;
   background-image: url("../image/Raisetech-test_contentImg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.p-munu .p-title {
+  color: #fff;
+  margin-bottom: 300px;
+}
+
+@media (min-width: 769px) {
+  .p-munu .p-title {
+    margin-bottom: 250px;
+  }
+}
+
+@media (min-width: 961px) {
+  .p-munu .p-title {
+    margin-bottom: 200px;
+  }
+}
+
 .p-munu .p-head {
-  margin-top: 297px;
+  margin-bottom: 10px;
+}
+
+.p-munu .p-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .p-access {
@@ -369,7 +476,7 @@
   z-index: 120;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 961px) {
   .p-hamburger {
     display: none;
   }
@@ -430,6 +537,13 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 961px) {
+  .wrapper {
+    right: 28%;
+    position: absolute;
+  }
+}
+
 .p-gmenu {
   height: 60px;
   color: #707070;
@@ -459,70 +573,57 @@ body {
   overflow-y: auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 961px) {
   .p-gmenu > .list {
-    width: inherit;
-    height: inherit;
-    padding: inherit;
-    position: static;
-    background: inherit;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-transition: inherit;
-    transition: inherit;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 55vh;
+    height: auto;
   }
 }
 
 .p-gmenu > .list > li {
   margin-bottom: 40px;
-  margin-right: 400px;
+  margin-right: 340px;
+  white-space: nowrap;
+  font-size: 1.4rem;
 }
 
 .p-gmenu > .list > li:last-child {
   margin-bottom: 0;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 961px) {
   .p-gmenu > .list > li {
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
 }
 
 .p-gmenu > .list > ul > li {
-  margin-right: 220px;
+  margin-right: 250px;
   margin-bottom: 30px;
   font-size: 1.0rem;
 }
 
-@media (min-width: 769px) {
-  .p-gmenu > .list {
-    height: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.p-gmenu > .list li {
-  font-size: 1.4rem;
-}
-
-@media (min-width: 769px) {
-  .p-gmenu > .list li {
-    margin-right: 20px;
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .p-gmenu > .list li a {
-    font-weight: normal;
+@media (min-width: 961px) {
+  .p-gmenu > .list > ul > li {
     white-space: nowrap;
+    margin-left: 40px;
+  }
+}
+
+.p-gmenu > .list > span {
+  font-size: 0;
+}
+
+@media (min-width: 961px) {
+  .p-gmenu > .list > span {
+    font-size: 30px;
+    position: absolute;
+    top: 70px;
   }
 }
 

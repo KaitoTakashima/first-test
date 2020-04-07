@@ -13,5 +13,28 @@
    }
    h1{
        margin:29px 0 39px 16px;
+       color:#707070;
+   }
+}
+
+.flex_header{
+   @include breakpoint (wide){
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      h1{
+         margin:0 0 30px 30px;
+      }
+      form{
+         margin-right:20px;
+         & .p-search_form_keyword{
+            width:330px;
+         }
+         & .p-search_form_submit{
+            display:inline-block;
+            width:50px;
+
+         }
+      }
    }
 }

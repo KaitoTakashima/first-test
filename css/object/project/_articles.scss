@@ -1,29 +1,64 @@
+.p-search_form_keyword{
+	width:60%;
+	height:40px;
+	border-radius: 10px;
+}
+
 .p-munu{
-     padding:20px;
+	 padding:20px;
     li{
        margin:5px auto;
        padding:20px;
        li{
            background-color:rgba(250, 250, 250,.7);
        }
-    }
+	}
+	@include breakpoint( pc ) {
+		display:flex;
+		padding:40px;
+		& .p-takeout {
+			margin-right:30px;
+		}
+	}
+
     & .p-takeout {
-        height:642px;
+		height:642px;
+		margin-bottom:20px;
         background-image: url("../image/Raisetech-test_contentImg2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
-    }
+	}
+
     & .p-eatin{
-        height:642px;
+		height:642px;
+		margin-bottom:50px;
         background-image: url("../image/Raisetech-test_contentImg1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
-    }
-    & .p-head{
-        margin-top:297px;
-    }
+	}
+
+    & .p-title{
+		color:#fff;
+		margin-bottom:300px;
+		@include breakpoint( pc ) {
+			margin-bottom:250px;
+		}
+		@include breakpoint( wide ) {
+			margin-bottom:200px;
+		}
+
+	}
+
+	& .p-head{
+		margin-bottom:10px;
+	}
+
+	& .p-heading{
+		font-size:20px;
+		margin-bottom:5px;
+	}
 }
 
 .p-access{
@@ -35,12 +70,14 @@
 
     & .p-access_heading{
         padding:46px 93px 46px 42px;
-    }
+	}
+
     & .p-access_text{
         padding:20px;
         line-height:33px;
     }
 }
+
 .p-access::before{
     content:'';
     background:rgba(0,0,0,.2);
@@ -61,7 +98,7 @@ $btnHeight: 1px;
 	background-color: #FFF7EF;
     position        : relative;
     z-index:120;
-    @include breakpoint( pc ) {
+    @include breakpoint( wide ) {
 		display: none;
     }
     &::before,
@@ -121,6 +158,14 @@ body.is-open {
 body {
 	overflow-x: hidden;
 }
+
+.wrapper{
+	@include breakpoint( wide ) {
+		right:28%;
+		position:absolute;
+
+	}
+}
 .p-gmenu{
     height:60px;
     color:#707070;
@@ -137,54 +182,77 @@ body {
 		flex-direction: column;
         align-items   : center;
 		z-index       : 100;
-        overflow-y    : auto;
-		@include breakpoint( pc ) {
-			width         : inherit;
-			height        : inherit;
-			padding       : inherit;
-			position      : static;
-			background    : inherit;
-			flex-direction: row;
-			transition: inherit;
+		overflow-y    : auto;
+		@include breakpoint( wide ) {
+			// width         : inherit;
+			// height        : inherit;
+			// padding       : inherit;
+			// position      : static;
+			// background    : inherit;
+			// flex-direction: row;
+			// transition: inherit;
+			// display:none;
+			// left:100%;
+			align-items: flex-start;
+			width:55vh;
+			height:auto;
+
 		}
 		> li {
             margin-bottom: 40px;
-            margin-right: 400px;
+			margin-right: 340px;
+			white-space: nowrap;
+			font-size: 1.4rem;
 			&:last-child {
 				margin-bottom: 0;
 			}
-			@include breakpoint( pc ) {
-				margin-bottom: 0;
+			@include breakpoint( wide ) {
+				margin-bottom: 30px;
+				font-size   : 1.2rem;
+				white-space: nowrap;
 			}
         }
         > ul{
             > li{
-                margin-right:220px;
+                margin-right:250px;
                 margin-bottom:30px;
-                font-size:1.0rem;
-            }
-        }
-	}
-	> .list {
-		@include breakpoint( pc ) {
-			height: 60px;
-			display: flex;
-			align-items: center;
-        }
-		li {
-			font-size: 1.4rem;
-			@include breakpoint( pc ) {
-				margin-right: 20px;
-				font-size   : 1.2rem;
-			}
-			a {
-				@include breakpoint( pc ) {
-					font-weight: normal;
+				font-size:1.0rem;
+				@include breakpoint( wide ) {
 					white-space: nowrap;
+					margin-left:40px;
 				}
+            }
+		}
+		> span{
+			font-size:0;
+			@include breakpoint( wide ) {
+			   font-size:30px;
+			   position:absolute;
+			   top:70px;
 			}
-        }
-    }
+		}
+	}
+
+	// > .list {
+	// 	@include breakpoint( pc ) {
+	// 		height: 600px;
+	// 		display: flex;
+	// 		align-items: center;
+    //     }
+	// 	li {
+	// 		font-size: 1.4rem;
+	// 		@include breakpoint( pc ) {
+	// 			margin-right: 20px;
+	// 			font-size   : 1.2rem;
+	// 		}
+	// 		a {
+	// 			@include breakpoint( pc ) {
+	// 				font-weight: normal;
+	// 				white-space: nowrap;
+	// 			}
+	// 		}
+    //     }
+    // }
 
 	&.is-open {
 		> .list {
